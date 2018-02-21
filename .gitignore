@@ -58,5 +58,5 @@ build/
 .jira-url
 atlassian-ide-plugin.xml
 .externalNativeBuild/
-/clovertpe/build/
-/clovertpe/clovertpe-clovertpe.iml
+/prospect/build/
+/prospect/prospect-prospect.iml
