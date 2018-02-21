@@ -1,11 +1,10 @@
-package com.resources.icc.viewflow;
+package com.sistemastpe.covertpe;
 
 
 import android.support.v4.view.ViewPager;
 
-import com.resources.icc.viewflow.core.CoverTransformer;
-import com.resources.icc.viewflow.core.LinkageCoverTransformer;
-import com.resources.icc.viewflow.core.LinkagePager;
+import com.sistemastpe.covertpe.core.CoverTransformer;
+import com.sistemastpe.covertpe.core.LinkagePager;
 
 
 /**
@@ -44,7 +43,7 @@ public class CoverFlow {
                     new CoverTransformer(this.scaleValue,this.pagerMargin,this.spaceSize,this.rotationY));
         }else if(this.linkagePager !=null){
             this.linkagePager.setPageTransformer(false,
-                    new LinkageCoverTransformer(this.scaleValue,this.pagerMargin,this.spaceSize,this.rotationY));
+                    new com.sistemastpe.covertpe.core.LinkageCoverTransformer(this.scaleValue,this.pagerMargin,this.spaceSize,this.rotationY));
         }
 
 

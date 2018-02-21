@@ -1,4 +1,4 @@
-package com.resources.icc.viewflow.core;
+package com.sistemastpe.covertpe.core;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -13,12 +13,13 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 
+
 public class LinkagePagerContainer extends FrameLayout implements LinkagePager.OnPageChangeListener {
 
     private LinkagePager mPager;
     private boolean mNeedsRedraw = false;
     private boolean isOverlapEnabled = false;
-    private PageItemClickListener pageItemClickListener;
+    private com.sistemastpe.covertpe.core.PageItemClickListener pageItemClickListener;
 
 
     public LinkagePagerContainer(Context context) {
@@ -50,7 +51,7 @@ public class LinkagePagerContainer extends FrameLayout implements LinkagePager.O
         isOverlapEnabled = overlapEnabled;
     }
 
-    public void setPageItemClickListener(PageItemClickListener pageItemClickListener) {
+    public void setPageItemClickListener(com.sistemastpe.covertpe.core.PageItemClickListener pageItemClickListener) {
         this.pageItemClickListener = pageItemClickListener;
     }
 
@@ -88,7 +89,7 @@ public class LinkagePagerContainer extends FrameLayout implements LinkagePager.O
                 ev.offsetLocation(mCenter.x - mInitialTouch.x, mCenter.y - mInitialTouch.y);
                 break;
             case MotionEvent.ACTION_UP:
-                int delta = Utils.isInNonTappableRegion(getWidth(),mPager.getWidth(),mInitialTouch.x, ev.getX());
+                int delta = com.sistemastpe.covertpe.core.Utils.isInNonTappableRegion(getWidth(),mPager.getWidth(),mInitialTouch.x, ev.getX());
                 if(delta!=0){
                     int preItem = mPager.getCurrentItem();
                     int currentItem = preItem + delta;

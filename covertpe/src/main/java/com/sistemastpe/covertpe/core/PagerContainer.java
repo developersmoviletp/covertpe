@@ -1,4 +1,4 @@
-package com.resources.icc.viewflow.core;
+package com.sistemastpe.covertpe.core;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+
+import com.sistemastpe.covertpe.core.PageItemClickListener;
 
 
 public class PagerContainer extends FrameLayout implements ViewPager.OnPageChangeListener {
